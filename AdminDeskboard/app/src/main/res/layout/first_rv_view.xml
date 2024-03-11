@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:orientation="vertical">
+
+<TextView
+    android:id="@+id/title_ID"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#2D0860"
+    android:textSize="15sp"
+    android:textStyle="bold"
+    android:maxLines="1"
+    android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+<ImageView
+    android:id="@+id/image_ID"
+    android:layout_width="120dp"
+    android:layout_height="100dp"
+    android:scaleType="fitXY"
+    />
+        <TextView
+            android:id="@+id/description_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:maxLines="5"
+            android:layout_marginLeft="5dp"
+            android:gravity="start"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/DeleteButton_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:backgroundTint="#634192"
+            android:layout_marginRight="5dp"
+            android:text="Delete"/>
+        <Button
+            android:id="@+id/UpdateButton_ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:backgroundTint="#634192"
+            android:layout_marginLeft="5dp"
+            android:text="Update"/>
+    </LinearLayout>
+</LinearLayout>
+</androidx.cardview.widget.CardView>

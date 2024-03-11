@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/first_Fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/adminbackground"
+    tools:context=".UpdateFragment">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#023932"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:text="Update your Data\nToday"/>
+
+        <EditText
+            android:id="@+id/titleEDText"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Write Title"
+            android:elevation="3dp"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:gravity="start"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <EditText
+            android:id="@+id/descriptionEDText"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:elevation="3dp"
+            android:hint="Write Description"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:gravity="start"/>
+        <EditText
+            android:id="@+id/imagelinkEDTExt"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:elevation="3dp"
+            android:hint="Image Link"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:gravity="start"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/updateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Data?"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

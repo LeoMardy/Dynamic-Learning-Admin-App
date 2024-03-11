@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item android:title="Categories">
+    <menu >
+        <group android:checkableBehavior="single">
+
+            <item android:id="@+id/firstCulum"
+                android:title="First Colum"
+                android:icon="@drawable/baseline_edit_note_24"/>
+            <item android:id="@+id/secondCulum"
+                android:title="Second Colum"
+                android:icon="@drawable/baseline_edit_note_24"/>
+            <item android:id="@+id/thirdCulum"
+                android:title="Third Colum"
+                android:icon="@drawable/baseline_edit_note_24"/>
+        </group>
+    </menu>
+</item>
+
+
+</menu>
